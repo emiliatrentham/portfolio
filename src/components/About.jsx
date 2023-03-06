@@ -1,13 +1,16 @@
+
+
 import React from 'react';
 // import HeroImage from '../assets/heroimage.png';
 
 const About = () => {
-  return (
-      <div name="about" className='w-full h-screen bg-gradient-to-b from-lime-600 via-emerald-300 to-white-800'>
+    return (
+      <div name="about" className='dark' >
+      <div className='w-full h-screen'>
           <div className='max-w-screen-lg p-4 mx-auto flex flex-col justify-center w-full h-full'>
               
-              <div className='pb-8  text-gray'>
-                  <p className='text-4xl font-bold inline text-white'>
+              <div className='pb-8'>
+                  <p className='text-4xl font-bold inline text-white '>
                       About
                   </p>
               </div>
@@ -18,9 +21,9 @@ const About = () => {
               <p className='text-xl text-gray-500'>
                   Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum porro tenetur natus voluptate! Veniam obcaecati nam et provident in neque laboriosam temporibus assumenda. Ducimus sint inventore, laboriosam excepturi debitis, dolores fuga officiis nam quod culpa a, repellat corporis saepe tempore minima nulla repellendus voluptate exercitationem consequuntur sapiente. Accusamus, totam magni!
               </p>
-          </div>
-          
-    </div>
+          </div>  
+            </div>
+            </div>
   )
 }
 

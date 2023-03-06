@@ -1,5 +1,5 @@
 import React from 'react'
-import { FaGithub, FaLinkedin } from 'react-icons/fa'
+import { FaGithub, FaLinkedin, FaStackOverflow } from 'react-icons/fa'
 import { HiOutlineMail }from 'react-icons/hi'
 // import { BsFillPersonLinesFill } from 'react-icons/bs'
 
@@ -25,6 +25,15 @@ const Socials = () => {
         },
         {
             id: 3,
+            child: (
+                <>Stack
+                    Overflow   <FaStackOverflow size={30} />
+                </>
+            ),
+            href: 'https://stackoverflow.com/users/21322500/emilia-trentham',
+        },
+        {
+            id: 4,
             child: (
                 <>Mail <HiOutlineMail size={30} />
                 </>

@@ -11,3 +11,26 @@
     font-family: 'Raleway', sans-serif;
   }
 }
+
+#light {
+  background: linear-gradient(to bottom, #65a30d, #6ee7b7, white);
+}
+
+#light .portfolios {
+  background-color: antiquewhite;
+}
+
+#dark {
+  background: linear-gradient(to bottom, black, black, white);
+}
+
+#dark .portfolios {
+  background-color: aliceblue;
+}
+
+.switch {
+  display:flex;
+  width: 100vw;
+  align-items: center;
+
+}

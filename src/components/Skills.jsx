@@ -75,18 +75,15 @@ const Skills = () => {
 
   return (
     <div name='skills'
-    className='w-full h-screen bg-gradient-to-b from-lime-600 via-emerald-300 to-white-800  text-white'>
+    className='w-full h-screen text-white'>
     <div className='max-w-screen-lg mx-auto p-4 flex flex-col justify-center w-full h-full'>
-      <div>
-        <p className='text-4xl font-bold text-white p-2 inline'>
+      <div  className='pb-8'>
+        <p className='text-4xl font-bold p-2 inline'>
           Skills
-          </p>
-          <p className='py-6 text-gray-500'>
-
           </p>
       </div>
     
-        <div className='w-full grid grid-cols-2 sm:grid-cols-8 gap-2 text-center py-8 px-12 sm:px-0'>
+        <div className='mt-20 w-full grid grid-cols-2 sm:grid-cols-8 gap-2 text-center py-8 px-12 sm:px-0'>
           
           {tech.map(({ id, child, title, style }) => (
           
