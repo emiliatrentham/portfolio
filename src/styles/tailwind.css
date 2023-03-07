@@ -13,24 +13,55 @@
 }
 
 #light {
-  background: linear-gradient(to bottom, #65a30d, #6ee7b7, white);
+  background: linear-gradient(to bottom, #65a30d, #6ee7b7,  #a7f3d0);
+ color: aliceblue;
 }
 
 #light .portfolios {
-  background-color: antiquewhite;
+  background-color: #94a3b8;
+  color: aliceblue;
+}
+
+#light .download {
+  border-color: aliceblue;
+  }
+  
+
+#light .hamburger-page {
+  background: linear-gradient(to bottom, #65a30d,  #6ee7b7, white);
+ color: #475569;
+}
+
+#dark .hamburger-links {
+ color: aliceblue;
 }
 
 #dark {
-  background: linear-gradient(to bottom, black, black, white);
+  background: linear-gradient(to bottom, #171717, #0f172a, #111827, white);
 }
 
 #dark .portfolios {
   background-color: aliceblue;
+  color: #94a3b8;
+}
+
+#dark .nav {
+  background-color: black;
+}
+
+#dark .download {
+border-color: #6ee7b7;
+background: none;
+}
+
+#dark .hamburger-page {
+  background: black;
 }
 
 .switch {
   display:flex;
   width: 100vw;
   align-items: center;
+  margin-right: 2%;
 
 }

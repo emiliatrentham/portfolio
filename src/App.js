@@ -5,7 +5,7 @@ import Home from "./components/Home";
 import NavBar from "./components/NavBar";
 import Portfolio from "./components/Portfolio";
 import Footer from "./components/Footer";
-import Skills from "./components/Skills";
+// import Skills from "./components/Skills";
 import Contact from "./components/Contact";
 import Resume from "./components/Resume";
 
@@ -32,8 +32,8 @@ function App() {
         return <About />
         case 'portfolio':
         return <Portfolio />
-        case 'skills':
-          return <Skills />
+        // case 'skills':
+        //   return <Skills />
           case 'contact':
         return <Contact />
           case 'resume':
@@ -49,11 +49,11 @@ function App() {
   return (
     <ThemeContext.Provider value={{theme, toggleTheme}}>
       <div className="App" id={theme}>
-        <div className='flex flex-row fixed'> 
+        <div className='flex flex-row fixed mr-2'> 
           
           <NavBar setCurrentPage={setCurrentPage} />
                             
-         <div className='switch h-20 justify-end right-30'>
+         <div className='switch h-20 justify-end '>
                 <ReactSwitch
                 onChange={toggleTheme}
                 checked={theme === 'light'}

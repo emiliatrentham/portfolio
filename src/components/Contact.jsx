@@ -11,7 +11,9 @@ function Contact() {
   const [email, setEmail] = useState('');
   const [name, setName] = useState('');
   const [input, setInput] = useState('');
-  const [errorMessage, setErrorMessage] = useState('');
+  const [errorNameInput, setErrorNameInput] = useState('');
+  const [errorEmailInput, setEmailInput] = useState('');
+  const [errorMessageInput, setErrorMessageInput] = useState('');
 
   const handleInputChange = (e) => {
     // Getting the value and name of the input which triggered the change
@@ -34,29 +36,36 @@ function Contact() {
     e.preventDefault();
 
     if (!confirmInput(name)) {
-        setErrorMessage('Input required');
+      setErrorNameInput('Name input required');
     }
       
     if (!confirmInput(input)) {
-        setErrorMessage('Input required');
+      setErrorMessageInput('Message required');
     }
       
     // First we check to see if the email is not valid or if the name is empty. If so we set an error message to be displayed on the page.
     if (!validateEmail(email)) {
-      setErrorMessage('Email is invalid');
+      setEmailInput('Email is invalid');
       // We want to exit out of this code block if something is wrong so that the user can correct it
-      return;
+
       // Then we check to see if the password is not valid. If so, we set an error message regarding the password.
     }
-    alert(`Message sent!`);
+    console.log(errorNameInput);
+    console.log(errorNameInput);
+    console.log(errorNameInput);
 
-   
-    // If everything goes according to plan, we want to clear out the input after a successful registration.
+    if (errorNameInput || errorEmailInput || errorMessageInput) {
+      return;
+    } else {
+      alert(`Message sent!`);
+      // If everything goes according to plan, we want to clear out the input after a successful registration.
       setName('');
       setEmail('');
       setInput('');
+    }
   };
     
+  
 
   return (
       <div name='contact' className='w-full h-screen'>
@@ -76,9 +85,19 @@ function Contact() {
                       <textarea value={input}  onChange={handleInputChange} name='input' placeholder='Enter your message' rows='10' className='text-white p-2 bg-transparent border-2 rounded-md focus:outline-none'></textarea>
                       <button onClick={handleFormSubmit} className='text-white bg-gradient-to-b from-teal-300 to-teal-600 px-6 py-3 my-8 mx-auto flex-items-center rounded-md hover:scale-110 duration-300'>Let's talk</button>
                   </form>
-                  {errorMessage && (
+                  {errorNameInput && (
         <div>
-          <p className="error-text ml-10 text-red-500">{errorMessage}</p>
+          <p className="error-text ml-10 text-red-500">{errorNameInput}</p>
+        </div>
+          )}
+          {errorEmailInput && (
+        <div>
+          <p className="error-text ml-10 text-red-500">{errorEmailInput}</p>
+        </div>
+          )}
+          {errorMessageInput && (
+        <div>
+          <p className="error-text ml-10 text-red-500">{errorMessageInput}</p>
         </div>
       )}
               </div>
