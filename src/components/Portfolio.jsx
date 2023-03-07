@@ -1,7 +1,7 @@
 import React from "react";
-import Giphtionary from "../assets/portfolio/Giphtionary.png";
-import Goalie from "../assets/portfolio/Goalie.png";
-import Weather from "../assets/portfolio/Weather.png";
+import Giphtionary from "../Assets/portfolio/Giphtionary.png";
+import Goalie from "../Assets/portfolio/Goalie.png";
+import Weather from "../Assets/portfolio/Weather.png";
 
 
 const Portfolio = () => {
@@ -26,6 +26,7 @@ const Portfolio = () => {
     //     src: ''
     // },
     // {
+
     //     id: 5,
     //     src: ''
     // },

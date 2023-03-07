@@ -1,5 +1,5 @@
 import React from "react";
-import HeroImage from "../assets/heroimage.png";
+import HeroImage from "../Assets/heroimage.png";
 // import {TiArrowRightOutline} from 'react-icons/ti'
 
 const Home = () => {
