@@ -54,9 +54,10 @@ function App() {
           <NavBar setCurrentPage={setCurrentPage} />
                             
          <div className='switch h-20 justify-end '>
-                <ReactSwitch
-                onChange={toggleTheme}
-                checked={theme === 'light'}
+            <ReactSwitch
+              
+              onChange={toggleTheme}
+              checked={theme === 'light'}
               uncheckedIcon={<FaSun size={25} style={{color: "orange", display: "flex",
               justifyContent: "flex-end", alignItems: "center", height: "100%", width: '80%', paddingLeft: 6
             }} />}
