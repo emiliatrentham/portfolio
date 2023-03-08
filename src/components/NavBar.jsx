@@ -54,7 +54,7 @@ const NavBar = ({
     <div className="nav flex justify-between items-center w-full h-20 px-4 fixed">
       <div>
         <h1 className="text-5xl font-brand ml-2 text-white">
-          Emilia
+          
         </h1>
       </div>
 
@@ -80,7 +80,7 @@ const NavBar = ({
         onClick={() =>
           setNav(!nav)
         }
-        className="cursor-pointer pr-4 z10 text-gray-400 md:hidden mr-[20%]"
+        className="cursor-pointer pr-4 z10 text-gray-500 hover:scale-105 duration-200 hover:text-gray-600 md:hidden mr-[15%]"
       >
         {nav ? (
           <FaTimes

@@ -10,7 +10,7 @@ const About = () => {
           <div className='max-w-screen-lg p-4 mx-auto flex flex-col justify-center w-full h-full'>
               
               <div className='pb-8'>
-                  <p className='text-4xl font-bold inline text-white '>
+                  <p className='title text-4xl font-bold inline text-white '>
                       About
                   </p>
               </div>
@@ -29,6 +29,4 @@ const About = () => {
 
 export default About;
 
-{/* <div>
-<img src={HeroImage} alt='my profile' className='rounded-full mx-auto w-2/3 md:w-2/4'/> 
-</div> */}
+

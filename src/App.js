@@ -65,8 +65,8 @@ function App() {
                 color: "white", display: "flex",
                 justifyContent: "flex-end", alignItems: "center", height: "100%", width: '80%', paddingLeft: 8
               }} />}
-                offColor="#94a3b8"
-                onColor="#94a3b8"
+                offColor="#374151"
+                onColor="#619c0e"
              
               height={35}
               width={75}

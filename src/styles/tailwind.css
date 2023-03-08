@@ -13,23 +13,42 @@
 }
 
 #light {
-  background: linear-gradient(to bottom, #65a30d, #6ee7b7,  #a7f3d0);
- color: aliceblue;
+  background: linear-gradient(to bottom, 
+  #65a30d , 
+  #84cc16 15%, #bef264, #a7f3d0, #99f6e4);
+ 
 }
 
-#light .portfolios {
-  background-color: #94a3b8;
-  color: aliceblue;
-}
 
 #light .download {
-  border-color: aliceblue;
+  color: #94a3b8;
   }
   
 
 #light .hamburger-page {
   background: linear-gradient(to bottom, #65a30d,  #6ee7b7, white);
- color: #475569;
+}
+
+#light .title {
+  color: #94a3b8;
+}
+
+#light .portfolio {
+  background-color: 
+#cbd5e1;
+}
+
+#light .tech {
+  color: #94a3b8;
+}
+
+#light .form {
+  border-color: #94a3b8;
+  color: #6b7280;
+}
+
+#light .footer {
+  color: #64748b;
 }
 
 #dark .hamburger-links {
@@ -37,12 +56,9 @@
 }
 
 #dark {
-  background: linear-gradient(to bottom, #171717, #0f172a, #111827, white);
-}
-
-#dark .portfolios {
-  background-color: aliceblue;
-  color: #94a3b8;
+  background: linear-gradient(to bottom, #171717, #0f172a,
+  #1e293b, #475569);
+ 
 }
 
 #dark .nav {
@@ -50,8 +66,8 @@
 }
 
 #dark .download {
-border-color: #6ee7b7;
-background: none;
+  color: white;
+
 }
 
 #dark .hamburger-page {
@@ -63,5 +79,12 @@ background: none;
   width: 100vw;
   align-items: center;
   margin-right: 2%;
+}
 
+#dark .portfolio {
+  background-color: #1e293b;
+}
+
+#dark .title {
+  color: white;
 }

@@ -142,12 +142,12 @@ const Resume = () => {
   return (
     <div
       name="resume"
-      className="w-full h-screen text-white py-80"
+      className="w-full h-screen text-white"
     >
       <div className="flex flex-col p-4 justify-center max-w-screen-lg mx-auto h-full">
-        <div className="pb-8">
+        <div className="pb-8 py-40">
           <div className="flex">
-            <p className="text-4xl font-bold text-white p-2 inline">
+            <p className="title text-4xl font-bold text-white p-2 inline">
               Resume
             </p>
 
@@ -169,7 +169,7 @@ const Resume = () => {
                       href={
                         href
                       }
-                      className="w-full text-white"
+                      className="w-full"
                       download={
                         download
                       }
@@ -179,7 +179,7 @@ const Resume = () => {
                       {/* {child} */}
 
                       <div>
-                        <button className="download text-white w-fit px-6 my-1 ml-[-30px] flex items-center cursor-pointer hover:text-cyan-600">
+                        <button className="download w-fit px-6 my-1 ml-[-30px] flex items-center cursor-pointer">
                           <span className=" duration-300">
                             {/* group-hover:rotate-90 */}
                             <AiOutlineDownload
@@ -266,7 +266,7 @@ const Resume = () => {
                 }) => (
                   <div
                     key={id}
-                    className={`shadow-md hover:scale-105 duration-500 py-2 rounded-lg ${style}`}
+                    className={`tech shadow-md hover:scale-105 duration-500 py-2 rounded-lg ${style}`}
                   >
                     <div className="flex justify-center">
                       {child}{" "}

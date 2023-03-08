@@ -121,7 +121,7 @@ function Contact() {
     >
       <div className="flex flex-col p-4 justify-center max-w-screen-lg mx-auto h-full py-60">
         <div className="pb-8">
-          <p className="text-4xl font-bold inline text-white">
+          <p className="title text-4xl font-bold inline text-white">
             Contact
           </p>
           {/* <p className='py-6 text-gray-500'>
@@ -143,7 +143,7 @@ function Contact() {
               name="name"
               placeholder="Enter your name"
               required
-              className="text-white p-2 bg-transparent border-2 rounded-md focus:outline-none"
+              className="form text-white p-2 bg-transparent border-2 rounded-md focus:outline-none"
             ></input>
 
             <input
@@ -155,7 +155,7 @@ function Contact() {
               type="text"
               name="email"
               placeholder="Enter your email"
-              className="text-white my-4 p-2 bg-transparent border-2 rounded-md focus:outline-none"
+              className="form text-white my-4 p-2 bg-transparent border-2 rounded-md focus:outline-none"
             ></input>
 
             <textarea
@@ -167,7 +167,7 @@ function Contact() {
               placeholder="Enter your message"
               rows={10}
               required
-              className="text-white p-2 bg-transparent border-2 rounded-md focus:outline-none"
+              className="form text-white p-2 bg-transparent border-2 rounded-md focus:outline-none"
             ></textarea>
 
             <button
