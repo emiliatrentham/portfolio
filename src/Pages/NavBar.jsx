@@ -5,6 +5,7 @@ import {
   FaBars,
   FaTimes,
 } from "react-icons/fa";
+import Switcher from "../Components/Switcher";
 
 const NavBar = ({
   setCurrentPage,
@@ -51,14 +52,17 @@ const NavBar = ({
   };
 
   return (
-    <div className="nav flex justify-between items-center w-full h-20 px-4 fixed">
+    <div className="nav flex flex-row justify-between items-center w-full h-20 px-4 fixed bg-none bg-lime-400 dark:bg-stone-900">
       <div>
-        <h1 className="text-5xl font-brand ml-2 text-white">
-          
+        <h1 className="text-2xl dark:text-white text-slate-400">
+          Emilia Trentham
+          <br></br>
+          Full-Stack Web Developer
         </h1>
       </div>
 
-      <ul className="hidden md:flex mr-[8%]">
+
+      <ul className="hidden md:flex justify-end">
         {links.map(
           ({ id, link }) => (
             <li
@@ -68,19 +72,21 @@ const NavBar = ({
                 )
               }
               key={id}
-              className="nav px-4 cursor-pointer capitalize font-medium text-gray-500 hover:scale-105 hover:text-gray-600 duration-200"
+              className="nav px-4 cursor-pointer capitalize font-medium text-gray-400 dark:text-gray-300 hover:scale-105 hover:text-gray-500 dark:hover:text-gray-400 duration-200"
             >
               {link}
+              
             </li>
           )
         )}
+            
       </ul>
 
       <div
         onClick={() =>
           setNav(!nav)
         }
-        className="cursor-pointer pr-4 z10 text-gray-500 hover:scale-105 duration-200 hover:text-gray-600 md:hidden mr-[15%]"
+        className="cursor-pointer z10 text-gray-400 hover:text-gray-500 dark:text-gray-300 dark:hover:text-gray-400 hover:scale-105 duration-200 md:hidden"
       >
         {nav ? (
           <FaTimes
@@ -92,7 +98,7 @@ const NavBar = ({
       </div>
 
       {nav && (
-        <ul className="hamburger-page flex flex-col justify-center items-center absolute top-0 left-0 w-full h-screen bg-gradient-to-b from black to-gray-800">
+        <ul className="hamburger-page flex flex-col justify-center items-center absolute top-0 left-0 w-full h-screen text-gray-500 dark:text-slate-300 dark:bg-slate-900 bg-emerald-300">
           <li
             onClick={() =>
               setNav(false)
@@ -114,14 +120,18 @@ const NavBar = ({
                   )
                 }
                 key={id}
-                className="hamburger-links mt-5 px-4 py-6 text-4xl cursor-pointer capitalize  text-gray-500 hover:scale-105 duration-200"
+                className="hamburger-links  mt-5 px-4 py-6 text-4xl cursor-pointer capitalize text-gray-500 dark:text-slate-300 hover:scale-105 duration-200"
               >
                 {link}
               </li>
             )
           )}
+          <div className="mr-10 mt-6">
+            <Switcher />
+            </div>
         </ul>
       )}
+          
     </div>
   );
 };
